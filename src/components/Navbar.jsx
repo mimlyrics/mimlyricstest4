@@ -138,8 +138,17 @@ const Navbar = () => {
              <Link className="flex py-2 hover:bg-slate-200" to="/video/category">
                <FaVideo className=" ml-2 mr-3 "/>Lyrics video
              </Link><span className="border-b-2"></span>
+             
               {pathname.includes("/video") ? <p className=" mx-2 border-b-4 border-blue-200  "></p> : null }
+<Link className="flex py-2 hover:bg-slate-200" to="/editor/dashboard">
+               <FaVideo className=" ml-2 mr-3 "/>Editor dashboard
+             </Link><span className="border-b-2"></span>
 
+         <Link className="flex py-2 hover:bg-slate-200" to="/editor/admin">
+               <FaVideo className=" ml-2 mr-3 "/>Editor Admin
+             </Link><span className="border-b-2"></span>
+              {pathname.includes("/video") ? <p className=" mx-2 border-b-4 border-blue-200  "></p> : null }    
+              {pathname.includes("/video") ? <p className=" mx-2 border-b-4 border-blue-200  "></p> : null }
              <Link className="flex py-2 hover:bg-slate-200" to="/assistance">
                <IoMdHelp className="ml-2 mr-3"/> Assistance
              </Link><span className="border-b-2"></span>
